@@ -1,0 +1,125 @@
+body{
+    font: 100%/1.5 arial, verdana, sans-serif
+}
+
+/*css media type*/
+@media print{
+
+    header nav{
+        display: none;
+    }
+
+    header{
+        min-height: auto;
+    }
+
+}
+
+.site{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header, footer{
+    background-color: #000;
+    min-height: 150px;
+}
+
+header h1{
+    font-size: 2em;
+    text-align: center;
+    line-height: 2;
+}
+
+.logo{
+    text-align: center;
+}
+
+.logo img{
+    width: 100px;
+    height: 100px;
+    padding: 10px 0;
+}
+
+.logo img:hover{
+    background-color: #fff;    
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+    display: inherit;
+}
+
+header li{
+    border-top: 2px solid;
+    line-height: 2.5;
+    text-align: center;
+    background-color: white;
+}
+
+header li:last-child{
+    border-bottom: 2px solid;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    background-color: aqua;
+    min-height: 700px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+main section{
+    background-color: khaki;
+    padding: 16px;
+}
+
+main blockquote cite{
+    font-style: italic;
+    text-align: end;
+}
+
+main aside{
+    background-color: seagreen;
+    text-align: center;
+}
+
+/*css media queries*/
+@media screen and (min-width: 768px) {
+    header{
+        min-height: auto;
+    }
+
+    .menu{
+        flex-direction: row;
+    }
+
+    .menu__item{
+        flex-grow: 1;
+        border-bottom: 2px solid;
+    }
+
+    main{
+        grid-template-columns: 1fr 0.25fr;
+    }
+}
+
+@media screen and (min-width: 1024px){
+
+    header h1{
+        text-align: left;
+        margin-left: 1em;
+    }
+
+    main{
+        grid-template-columns: 1fr 0.5fr;
+    }
+}
+
+
