@@ -1,0 +1,95 @@
+.site{
+    background: url("../img/bg-desktop.jpg");
+    display: flex;
+    width: 100%;
+    height: 650px;
+    background-repeat: no-repeat;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+
+.sup{
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+}
+
+.titulo{
+    display: block;
+    font-size: 34px;
+    font-family: assassins;
+    text-align: center;
+}
+
+.sup h2{
+    font-size: 30px;
+}
+
+h2{
+    color: red;
+    margin-bottom: 20px;
+}
+
+.subtitulo{
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+}
+
+.titulo, .subtitulo{
+    margin-left: 40px;
+}
+
+.jogos{
+    margin: 30px auto 70px; 
+    width: 768px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.jogo{
+    padding: 5px 15px;
+    text-decoration: none;
+    color: black;
+    border-left: 2px solid black ;
+    border-right: 2px solid black;
+    display: block;
+    text-align: center;
+    font-family: assassins;
+    font-size: 18px;
+}
+
+.jogo:hover{
+    background-color: black;
+    color: white; 
+}
+
+@font-face {
+    font-family: assassins;
+    src: url("../font/Assassin$.ttf");
+}
+
+@media screen and (max-width: 768px) {
+    .site{
+        background: url("../img/bg-mobile.png");
+        align-items: center;
+    }
+    .sup{
+        align-items: center;
+    }
+
+    .titulo, .subtitulo{
+        margin-left: 0;
+    }
+
+    .jogos{
+        flex-direction: column;
+        width: 250px;
+    }
+    .jogo{
+        margin-top: 40px;
+    }
+    
+}
